@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Khushisingh-dev.github.io/TravelEase",
   "name": "system",
   "private": true,
   "version": "0.0.0",
@@ -8,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",

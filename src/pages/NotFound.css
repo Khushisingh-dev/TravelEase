@@ -1,0 +1,39 @@
+.notfound-container {
+  text-align: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.notfound-container h1 {
+  font-size: 8rem;
+}
+
+.notfound-container h2 {
+  font-size: 2rem;
+}
+
+.home-link {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .notfound-container h1 {
+    font-size: 5rem;
+  }
+
+  .notfound-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-link {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+}

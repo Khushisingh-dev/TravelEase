@@ -79,7 +79,8 @@
   }
   
   .about-card {
-    padding: 16px 27px 45px;
+    margin: -40px 10px 10px 10px;
+    padding:30px 45px;
     max-width: 90%;
   }
 

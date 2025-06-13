@@ -25,9 +25,15 @@ const BookingPage = () => {
   });
 
   useEffect(() => {
-    if (!matchedDestination) navigate("/");
     window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (!matchedDestination) {
+      navigate("/");
+    }
   }, [matchedDestination, navigate]);
+
 
   const handleChange = (e) => {
     setFormData((prev) => ({

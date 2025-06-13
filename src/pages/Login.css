@@ -4,39 +4,38 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  gap: 40px;
+  gap: 50px;
   padding: 40px;
   box-sizing: border-box;
-  background-color: #f6f6f6;
   background: linear-gradient(to right, #f8cfdc, #c7e5fc);
 }
 
 .login-card {
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   padding: 25px 30px;
-  max-width: 500px;
-  width: 100%;
+  width: 500px;
+  max-width: 90%;
   transition: transform 0.3s ease, box-shadow 0.2s ease;
   box-sizing: border-box;
+  margin-top: -42px;
 }
 
 .login-title {
+   font-weight: bold;
+  margin-top: -15px;
   font-size: 2.5rem;
   color: #1a237e;
-  margin: 10px 0 5px;
-  font-weight: 700;
   text-align: center;
 }
 
 .login-intro {
+   margin-top: -25px;
   font-size: 1.1rem;
   color: #333;
-  margin: 0 auto 20px;
-  line-height: 1.8;
+  line-height: 1.6;
   text-align: center;
-  max-width: 400px;
 }
 
 .login-form label {
@@ -45,6 +44,9 @@
   font-weight: 600;
   color: #374151;
   font-size: 1.1rem;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .login-form input {
@@ -128,8 +130,10 @@
   .login-section {
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
-    gap: 30px;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 30px 15px;
+    gap: 25px;
   }
 
   .login-section img {
@@ -137,31 +141,39 @@
   }
 
   .login-card {
+    max-width: 100%;
+    width: 100%;
     padding: 20px;
+    margin-top: 0;
+    box-sizing: border-box;
   }
 
   .login-title {
     font-size: 2rem;
+    margin-top: 0;
   }
 
   .login-intro {
-    font-size: 1rem;
-    line-height: 1.6;
+     font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.5;
   }
 
   .login-form label {
     font-size: 1rem;
+    margin-bottom: 8px;
   }
 
   .login-form input {
     font-size: 0.95rem;
-    padding: 12px;
+    padding: 10px;
   }
 
   .login-btn {
     font-size: 0.95rem;
     padding: 12px 30px;
     border-radius: 12px;
+    margin-top: 20px;
   }
 
   .status-msg {
@@ -170,7 +182,7 @@
 
   .error-msg {
     font-size: 0.85rem;
-    margin-left: 0;
+    margin-left: 10px;
   }
 
   .switch-link {

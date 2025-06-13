@@ -4,10 +4,18 @@ import './HomePage.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 const HomePage = () => {
     const [subscribed, setSubscribed] = useState(false);
     const [email, setEmail] = useState("");
+    const [query, setQuery] = useState('');
+    const [isHeroLoaded, setIsHeroLoaded] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const img = new Image();
+        img.src = "/landscape1.jpg";
+        img.onload = () => setIsHeroLoaded(true);
+    }, []);
 
     useEffect(() => {
         if (subscribed) {
@@ -18,27 +26,25 @@ const HomePage = () => {
         }
     }, [subscribed]);
 
-    const [query, setQuery] = useState('');
-    const navigate = useNavigate();
-
-    const handleSearch = () => {
-        if (query.trim()) {
-            navigate(`/search?query=${encodeURIComponent(query)}`);
-        }
-    };
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
     }, []);
 
+    if (!isHeroLoaded) {
+        return (
+            <div className="page-loader">
+                <div className="loading-text">Loading...</div>
+            </div>
+        );
+    }
+
     return (
         <div className="homepage">
-
             {/* Hero Section */}
-            <section className="hero" >
+            <section className="hero loaded">
                 <h1 data-aos="fade-up">Find Your Next Adventure</h1>
                 <p data-aos="fade-up">Explore and Book amazing travel destinations.</p>
                 <div className="search-bar">
-                    {/* <input type="text" placeholder="Where to?" value={query} onChange={(e) => setQuery(e.target.value)} /> */}
                     <select
                         name="query"
                         value={query}
@@ -67,8 +73,11 @@ const HomePage = () => {
                         <option value="Cape Town">Cape Town</option>
                         <option value="Singapore">Singapore</option>
                     </select>
-
-                    <button onClick={handleSearch}>Search</button>
+                    <button onClick={() => {
+                        if (query.trim()) {
+                            navigate(`/search?query=${encodeURIComponent(query)}`);
+                        }
+                    }}>Search</button>
                 </div>
             </section>
 
@@ -108,7 +117,7 @@ const HomePage = () => {
                 </ul>
             </section>
 
-            {/* testimonials */}
+            {/* Testimonials */}
             <section className="testimonials" data-aos="fade-up">
                 <h2>What Our Travelers Say</h2>
                 <div className="testimonial-container">
@@ -127,12 +136,14 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* newsletter */}
+            {/* Newsletter */}
             <section className="newsletter" data-aos="fade-up">
                 <h2>Subscribe to Our Newsletter</h2>
                 <p>Get travel deals and updates directly to your inbox.</p>
                 {subscribed ? (
-                    <p className="thank-you" style={{ fontSize: "1.2rem", color: "blue" }}><strong>Thank you for subscribing!</strong></p>
+                    <p className="thank-you" style={{ fontSize: "1.2rem", color: "blue" }}>
+                        <strong>Thank you for subscribing!</strong>
+                    </p>
                 ) : (
                     <form
                         className="newsletter-form"

@@ -1,12 +1,15 @@
- .header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 5px 20px;
-   background-color: #f9f9f9;
-   flex-wrap: nowrap;
-   position: relative;
- }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #f9f9f9;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 
  .left li {
    list-style-type: none;

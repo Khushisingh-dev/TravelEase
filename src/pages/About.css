@@ -70,17 +70,17 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px 28px;
     gap: 30px;
+    min-height: 100vh;
   }
-
+  
   .about-section img {
     display: none;
   }
-
+  
   .about-card {
+    padding: 16px 27px 45px;
     max-width: 90%;
-    padding: 22px;
   }
 
   .about-title {

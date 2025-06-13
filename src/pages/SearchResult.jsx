@@ -12,7 +12,7 @@ const SearchResult = () => {
 
   const [matched, setMatched] = useState(null);
   const [others, setOthers] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(6); // show 6 initially
+  const [visibleCount, setVisibleCount] = useState(6);
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
@@ -33,6 +33,12 @@ const SearchResult = () => {
 
     setVisibleCount(6);
 
+    // Preload matched image
+    if (matchedDestination?.image) {
+      const img = new Image();
+      img.src = matchedDestination.image;
+    }
+
     setTimeout(() => {
       AOS.refreshHard();
     }, 100);
@@ -49,7 +55,13 @@ const SearchResult = () => {
       {matched ? (
         <div className="matched-destination" key={matched.name + query} data-aos="fade-in">
           <h2>{matched.name}</h2>
-          <img src={matched.image} alt={matched.name} />
+          <img
+            src={matched.image}
+            alt={matched.name}
+            width="100%"
+            height="300"
+            style={{ objectFit: "cover", borderRadius: "8px", backgroundColor: "#eee" }}
+          />
           <p>{matched.description}</p>
 
           <div className="destination-info">
@@ -66,7 +78,6 @@ const SearchResult = () => {
           <Link to={`/booking?destination=${encodeURIComponent(matched.name)}`} className="book-now-button">
             Book Now
           </Link>
-
         </div>
       ) : (
         <p>No exact match found. Here are some popular destinations:</p>
@@ -81,7 +92,13 @@ const SearchResult = () => {
               className="other-card"
               data-aos="fade-up"
             >
-              <img src={dest.image} alt={dest.name} />
+              <img
+                src={dest.image}
+                alt={dest.name}
+                width="100%"
+                height="220"
+                style={{ objectFit: "cover", borderRadius: "6px", backgroundColor: "#f2f2f2" }}
+              />
               <h3>{dest.name}</h3>
               <p style={{ paddingBottom: "15px" }}>{dest.tagline}</p>
               <Link to={`/search?query=${encodeURIComponent(dest.name)}`}>
@@ -104,4 +121,3 @@ const SearchResult = () => {
 };
 
 export default SearchResult;
-

@@ -6,7 +6,7 @@
   padding: 40px;
   gap: 50px;
   box-sizing: border-box;
-  background: linear-gradient(to right,#c7e5fc, #f8cfdc);
+  background: linear-gradient(to right, #c7e5fc, #f8cfdc);
 }
 
 .signup-card {
@@ -38,13 +38,15 @@
 
 .signup-form label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 600;
   color: #374151;
-  font-size: 1.2rem;
-  margin-left: -2px;
-  margin-top: -5px;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 0;
 }
+
 
 .signup-form input {
   width: 100%;

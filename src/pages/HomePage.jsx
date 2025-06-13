@@ -81,19 +81,19 @@ const HomePage = () => {
                         <img src="/paris.jpg" alt="Paris" />
                         <h3>Paris</h3>
                         <p>The romantic capital of the world.</p>
-                        <Link to="/booking">Book Now</Link>
+                        <Link to="/booking?destination=paris">Book Now</Link>
                     </div>
                     <div className="card">
                         <img src="/dubai.jpg" alt="Dubai" />
                         <h3>Dubai</h3>
                         <p>Luxury, skyscrapers, and adventures.</p>
-                        <Link to="/booking">Book Now</Link>
+                        <Link to="/booking?destination=dubai">Book Now</Link>
                     </div>
                     <div className="card">
                         <img src="/tokyo.jpg" alt="Tokyo" />
                         <h3>Tokyo</h3>
                         <p>Where tradition meets future.</p>
-                        <Link to="/booking">Book Now</Link>
+                        <Link to="/booking?destination=tokyo">Book Now</Link>
                     </div>
                 </div>
             </section>

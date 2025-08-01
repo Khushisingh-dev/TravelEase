@@ -1,0 +1,65 @@
+.connect-page {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right,#c7e5fc, #f8cfdc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.connect-page h2 {
+  font-size: 36px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.connect-page p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.connect-page .links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.connect-page a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #045885;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.connect-page a:hover {
+  background-color: #023f66;
+  transform: scale(1.05);
+}
+
+.connect-page i {
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .connect-page h2 {
+    font-size: 28px;
+  }
+
+  .connect-page .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .connect-page a {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}

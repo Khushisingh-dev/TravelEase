@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Paris",
+    "image": "/paris.jpg",
+    "tagline": "The romantic capital of the world.",
+    "description": "Romantic city of lights, fashion, and croissants.",
+    "price": "₹18999",
+    "rating": 4.7,
+    "reviewCount": 234,
+    "review": "“Super easy booking experience. Highly recommend!”",
+    "reviewer": "Aditi Kapoor"
+  },
+  {
+    "name": "Dubai",
+    "image": "/dubai.jpg",
+    "tagline": "Luxery, skyscrapers and desert adventures",
+    "description": "Luxurious city with modern architecture and desert safaris.",
+    "price": "₹24499",
+    "rating": 4.6,
+    "reviewCount": 198,
+    "review": "“Amazing place for luxury and adventure.”",
+    "reviewer": "Rahul Mehta"
+  },
+  {
+    "name": "Tokyo",
+    "image": "/tokyo.jpg",
+    "tagline": "Where tradition meets future.",
+    "description": "A blend of tradition and technology, vibrant city life",
+    "price": "₹29999",
+    "rating": 4.8,
+    "reviewCount": 265,
+    "review": "“Incredible culture and food!”",
+    "reviewer": "Sana Khan"
+  },
+  {
+    "name": "New York",
+    "image": "/newyork.jpg",
+    "tagline": "The city that never sleeps, always inspires.",
+    "description": "The city that never sleeps, with iconic landmarks and nightlife.",
+    "price": "₹32000",
+    "rating": 4.5,
+    "reviewCount": 305,
+    "review": "“A must-visit for every traveler.”",
+    "reviewer": "Ankit Verma"
+  },
+  {
+    "name": "London",
+    "image": "/london.jpg",
+    "tagline": "Timeless charm and modern vibes.",
+    "description": "Historic city with royal palaces and world-class museums.",
+    "price": "₹28500",
+    "rating": 4.6,
+    "reviewCount": 187,
+    "review": "“So much history packed in one place!”",
+    "reviewer": "Neha Roy"
+  },
+  {
+    "name": "Sydney",
+    "image": "/sydney.jpg",
+    "tagline": "Sun, surf, and iconic skylines.",
+    "description": "Famous for the Opera House and stunning beaches.",
+    "price": "₹27800",
+    "rating": 4.7,
+    "reviewCount": 150,
+    "review": "“Loved the weather and beaches!”",
+    "reviewer": "Ramesh Gupta"
+  },
+  {
+    "name": "Rome",
+    "image": "/rome.jpg",
+    "tagline": "Walk through history’s greatest empire.",
+    "description": "Ancient city with ruins, art, and Italian cuisine.",
+    "price": "₹25000",
+    "rating": 4.8,
+    "reviewCount": 210,
+    "review": "“History comes alive here!”",
+    "reviewer": "Meera Joshi"
+  },
+  {
+    "name": "Barcelona",
+    "image": "/barcelona.jpg",
+    "tagline": "Art, architecture, and Mediterranean charm.",
+    "description": "Colorful city famous for unique architecture and vibrant culture.",
+    "price": "₹26200",
+    "rating": 4.6,
+    "reviewCount": 143,
+    "review": "“Colorful and lively city.”",
+    "reviewer": "Arjun Desai"
+  },
+  {
+    "name": "Cape Town",
+    "image": "/capetown.jpg",
+    "tagline": "Mountains, oceans, and vibrant culture.",
+    "description": "Scenic city with mountains, beaches, and rich heritage.",
+    "price": "₹22900",
+    "rating": 4.5,
+    "reviewCount": 97,
+    "review": "“Nature and city in perfect harmony.”",
+    "reviewer": "Kavita Rao"
+  },
+  {
+    "name": "Singapore",
+    "image": "/singapore.jpg",
+    "tagline": "Clean streets, modern marvels, and rich culture.",
+    "description": "Modern city-state with gardens and amazing food.",
+    "price": "₹19999",
+    "rating": 4.7,
+    "reviewCount": 202,
+    "review": "“Clean, green and exciting.”",
+    "reviewer": "Rohit Kumar"
+  },
+  {
+    "name": "Bali",
+    "image": "/bali.jpg",
+    "tagline": "Island of the Gods",
+    "description": "Experience Bali’s tropical paradise, vibrant culture, and iconic beaches.",
+    "price": "₹48000",
+    "rating": 4.7,
+    "reviewCount": 1524,
+    "review": "“Absolutely breathtaking! From the rice terraces to the spiritual temples, Bali is a dream come true.”",
+    "reviewer": "Priya Mehra"
+  },
+  {
+    "name": "Bangkok",
+    "image": "/bangkok.jpg",
+    "tagline": "The City of Angels",
+    "description": "Explore Bangkok’s bustling street life, historic temples, and mouth-watering street food.",
+    "price": "₹36000",
+    "rating": 4.5,
+    "reviewCount": 2037,
+    "review": "“Energetic, exciting, and full of flavor — a must-visit for foodies and culture lovers.”",
+    "reviewer": "Rohan Desai"
+  },
+  {
+    "name": "Istanbul",
+    "image": "/istanbul.jpg",
+    "tagline": "Where East Meets West",
+    "description": "Wander through ancient bazaars and beautiful mosques in this historic city.",
+    "price": "₹58000",
+    "rating": 4.5,
+    "reviewCount": 1614,
+    "review": "“The history is unmatched. Loved Hagia Sophia and the Bosphorus views.”",
+    "reviewer": "Karan Bhatt"
+  },
+  {
+    "name": "India",
+    "image": "/india.jpg",
+    "tagline": "Incredible India",
+    "description": "Explore a land of festivals, flavors, spirituality, and natural beauty.",
+    "price": "₹25000",
+    "rating": 4.8,
+    "reviewCount": 5904,
+    "review": "“Every region is unique. From the Himalayas to Kerala — a spiritual and sensory delight.”",
+    "reviewer": "Amit Joshi"
+  },
+  {
+    "name": "Japan",
+    "image": "/japan.jpg",
+    "tagline": "The Future Meets Tradition",
+    "description": "From cherry blossoms to bullet trains, Japan is a perfect mix of old and new.",
+    "price": "₹75000",
+    "rating": 4.9,
+    "reviewCount": 2257,
+    "review": "“Flawless public transport, rich culture, and beautiful landscapes — a 10/10 destination.”",
+    "reviewer": "Sanya Verma"
+  },
+  {
+    "name": "Maldives",
+    "image": "/maldives.jpg",
+    "tagline": "Heaven on Earth",
+    "description": "Relax in overwater villas and soak in the turquoise beauty of the Maldives.",
+    "price": "₹85000",
+    "rating": 4.9,
+    "reviewCount": 1129,
+    "review": "“Unforgettable honeymoon experience! The waters were crystal clear and the sunsets surreal.”",
+    "reviewer": "Aanya Kapoor"
+  },
+  {
+    "name": "Manali",
+    "image": "/manali.jpg",
+    "tagline": "The Queen of Hills",
+    "description": "Snow-capped mountains, pine forests, and peaceful getaways await in Manali.",
+    "price": "₹18000",
+    "rating": 4.7,
+    "reviewCount": 2341,
+    "review": "“Perfect for a quick mountain retreat. The views and vibe are so refreshing!”",
+    "reviewer": "Ritu Chauhan"
+  },
+  {
+    "name": "Korea",
+    "image": "/korea.jpg",
+    "tagline": "Land of K-Pop & Culture",
+    "description": "From Seoul’s nightlife to Jeju’s serenity, Korea is both fun and peaceful.",
+    "price": "₹49000",
+    "rating": 4.6,
+    "reviewCount": 1308,
+    "review": "“Amazing people, clean cities, and addictive food. I want to go back already!”",
+    "reviewer": "Anjali Sharma"
+  },
+  {
+    "name": "America",
+    "image": "/america.jpg",
+    "tagline": "The Land of Dreams",
+    "description": "Discover the diversity of America — from iconic cities to breathtaking national parks.",
+    "price": "₹120000",
+    "rating": 4.6,
+    "reviewCount": 3842,
+    "review": "“Every state offers a new adventure. Grand Canyon, New York, and LA were personal highlights!”",
+    "reviewer": "Neha Malhotra"
+  },
+  {
+    "name": "China",
+    "image": "/china.jpg",
+    "tagline": "Timeless Traditions",
+    "description": "Walk the Great Wall, visit ancient palaces, and experience dynamic cities.",
+    "price": "₹55000",
+    "rating": 4.4,
+    "reviewCount": 1760,
+    "review": "“Blends ancient history with modern marvels — especially loved the food and temples!”",
+    "reviewer": "Vikram Sinha"
+  }
+]
